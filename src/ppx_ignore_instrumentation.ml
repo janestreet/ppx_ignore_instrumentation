@@ -14,8 +14,8 @@ let probe_extension =
     Ast_pattern.(
       pstr (pstr_eval (pexp_apply (estring __) (no_label __ ^:: nil)) nil ^:: nil))
     (fun ~loc ~path:_ _ ex ->
-       let loc = { loc with loc_ghost = true } in
-       [%expr if false then [%e ex]])
+      let loc = { loc with loc_ghost = true } in
+      [%expr if false then [%e ex]])
 ;;
 
 (* [%probe_is_enabled "name"] in its default disabled state is equivalent to [false] *)
