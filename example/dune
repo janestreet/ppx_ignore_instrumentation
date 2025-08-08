@@ -4,5 +4,5 @@
   (pps ppx_ignore_instrumentation)))
 
 (alias
- (name DEFAULT)
+ (name default)
  (deps test.ml.pp))
