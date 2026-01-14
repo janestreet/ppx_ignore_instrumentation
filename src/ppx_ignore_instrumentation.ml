@@ -4,7 +4,7 @@ open! Ppxlib
    ignored. There's also an error when you use an extension reserved by the compiler (like
    [%probe] with Jane Street's compiler), and prefixing gets around it. *)
 
-(* [%probe "name" expr] in its default disabled state is equivalent to 
+(* [%probe "name" expr] in its default disabled state is equivalent to
    [if false then expr]. We use this rewrite instead of [()] to avoid causing unused
    variable warnings. *)
 let probe_extension =
