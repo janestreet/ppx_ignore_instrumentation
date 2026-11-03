@@ -1,5 +1,4 @@
-ppx_ignore_instrumentation
-==========================
+# ppx_ignore_instrumentation
 
 A PPX that removes the AST nodes for instrumentation extensions, like
 `[%probe]`, which are currently internal to Jane Street.
